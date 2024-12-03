@@ -9,4 +9,11 @@ public class FireSpell : Spell
         base.Cast();
         Debug.Log($"Casting a {this.name}! Burn them all!");
     }
+
+    private void Start()
+    {
+        Cast();
+        Cast("Slime");
+        Cast("Slime", 5);
+    }
 }

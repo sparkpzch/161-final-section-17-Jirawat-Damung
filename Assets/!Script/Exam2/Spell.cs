@@ -10,10 +10,10 @@ public class Spell : MonoBehaviour
     }
 
     public void Cast (string enemyName){
-        Debug.Log($"Casting a {this.name} on {enemyName}!");
+        Debug.Log($"Casting a spell on target : {enemyName}");
     }
 
     public void Cast (String enemyName, int castLevel){
-        Debug.Log($"Casting a {this.name} with Power : {castLevel} on {enemyName}!");
+        Debug.Log($"Casting a spell on target {enemyName} with power level : {castLevel}");
     }
 }
